@@ -2,6 +2,7 @@ const express = require('express')
 const http = require('http')
 const path = require('path')
 const socketIo = require('socket.io')
+var port = 3000 || process.env.PORT
 
 var app = express()
 var server = http.createServer(app)
@@ -49,6 +50,6 @@ io.on('connection',function(socket){
 })
 
 
-server.listen(3000,function(){
+server.listen(port,function(){
   console.log('We Are On 3000')
 })
