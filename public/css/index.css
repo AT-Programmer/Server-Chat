@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 200vh;
+  width: 100%;
+}
+.container .navigation__bar {
+  display: grid;
+    grid-template-columns: 50% 50%;
+}
+.navigation__bar .heading h1 {
+  font-family: consolas;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.nav__height {
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+
+}
+ul li {
+  display: inline-block;
+  padding: 15px;
+}
+ul {
+  float: right;
+}
+ul li:hover {
+  color: orange;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.introduction__website {
+  height: 600px;
+  width: 100%;
+position: relative;
+  background: linear-gradient(74deg,lightgreen,red);
+
+}
+.introduction__website .text{
+position: absolute;
+  color: white;
+  margin-top: 150px;
+  font-family: sans-serif;
+  font-size: 28px;
+
+}
+.introduction__website .paragraph,
+.introduction__website .text {
+  margin-left: 300px;
+}
+.introduction__website h1{
+  z-index: 5;
+}
+
+
+.introduction__website .paragraph {
+ text-align: left;
+ position: absolute;
+ left: 75px;
+ top: 210px;
+ color: lightgreen;
+ font-size: 17px;
+ height: 600px;
+ max-width: 400px;
+}
+.introduction__website .image {
+  background-image: url('/images/image.jpg');
+  background-size: cover;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+.server__section .heading {
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  margin-top: 10px;
+  line-height: 35px;
+  border-bottom: 1px solid black;
+
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.servers .server {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 20px;
+margin-left: 35px;}
+.host {
+  font-size: 25px;
+  margin-right: 0px;
+  margin-top: 20px;
+}
+.market {
+  height: 700px;
+  width: 100%;
+  background-color: #242424;
+  text-align: center;
+}
+.market .heading {
+  color: white;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: 40px;
+
+}
+.market .heading h1 {
+  position: relative;
+  top: 12px;
+}
+.market .colums > div {
+  height: 450px;
+  width: 400px ;
+  border: 1px solid white;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.market .colums {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.market__2,
+.market__3{
+  position: relative;
+  bottom: 40px;
+  border-top: 1px solid white
+}
+button {
+  width: 90%;
+  height: 50px;
+  background: lightgreen;
+  margin-top: 370px;
+  border: none;
+
+}
+button:hover{
+  cursor: pointer;
+  background: green;
+}
+.market__3 .info .heading,
+.market__3 .paragraph {
+  position: relative;
+  right: 250px;
+}
+
+.market__3 .paragraph {
+  position: relative;
+  top: 25px;
+  color: grey;
+
+}
+.signup__box {
+  height: 450px;
+  width: 350px;
+  border: 1px solid white;
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+  text-align: left;
+  padding-left: 20px;
+  background: rgba(255,255,255,0.9);
+}
+.market__3 input {
+  height: 50px;
+  width: 94%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 15px;
+  position: relative;
+  left: -10px;
+  margin-top: 15px;
+}
+input[type="button"]{
+  height: 50px;
+  width: 100%;
+  background-color: lightgreen;
+  margin-top: 40px;
+  border: none;
+}
+.copyright {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background: rgba(0,0,255,1);
+  color: white;
+  font-family: consolas;
+  text-align: center;
+  line-height: 40px;
+  bottom: -274%;
+}
