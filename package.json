@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "node server.js",
-    "engine" : ""
+    "start": "node server.js"
   },
-  "engine" : {
+  "engine": {
     "node" : "10.15.1"
   },
   "author": "",
