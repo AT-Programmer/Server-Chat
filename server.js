@@ -2,7 +2,7 @@ const express = require('express')
 const http = require('http')
 const path = require('path')
 const socketIo = require('socket.io')
-var port =  process.env.PORT || 3000 
+var port =  process.env.PORT || 3000
 
 var app = express()
 var server = http.createServer(app)
@@ -12,8 +12,15 @@ var users = []
 
 app.use(express.static('public'))
 
+app.get('/dashboard/chatserver',function(req,res) {
+  res.sendFile(__dirname + '/public/dashboard/chatserver.html')
+})
+
+app.get('/dashboard',function(req,res) {
+  res.sendFile(__dirname + '/public/dashboard.html')
+})
+
 io.on('connection',function(socket){
-  users.push(Math.floor(Math.random(1000)))
 
   socket.on('join',function(data){
 
